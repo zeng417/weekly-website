@@ -108,7 +108,6 @@ export default defineConfig({
       ...item,
       isLatest: i === 0
     })),
-    search: { provider: 'local' },
     footer: {
       message: '聚焦具身智能，追踪前沿动态',
       copyright: 'Copyright © 2026 具身智能团队'
