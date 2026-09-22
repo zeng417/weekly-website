@@ -12,7 +12,7 @@ export default defineConfig({
       {
         text: '2026年',
         items: [
-          { text: '第37周', link: '/weekly/2026-37' },
+          { text: '第39周', link: '/weekly/2026-39' },
           { text: '第38周', link: '/weekly/2026-38' },
           { text: '第37周', link: '/weekly/2026-37' }
         ]
