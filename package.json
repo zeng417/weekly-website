@@ -1,17 +1,20 @@
 {
   "name": "weekly-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "具身智能周刊 - 每周精选行业洞察、开源项目与论文速递",
   "scripts": {
-     "docs:dev": "vitepress dev",
+    "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "具身智能",
+    "机器人",
+    "周刊",
+    "VitePress"
+  ],
+  "author": "具身智能团队",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "vitepress": "^1.6.4",
     "vue": "^3.5.43"

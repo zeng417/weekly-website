@@ -8,14 +8,14 @@
 
 .weekly-card {
   display: block;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
   padding: 24px;
   text-decoration: none !important;
   color: inherit !important;
-  background-color: #ffffff;
+  background-color: var(--vp-c-bg);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .weekly-card:hover {
@@ -30,7 +30,7 @@
   align-items: center;
   margin-bottom: 12px;
   font-size: 0.85em;
-  color: #6b7280;
+  color: var(--vp-c-text-2);
 }
 
 .card-badge {
@@ -45,28 +45,43 @@
   font-size: 1.15em;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #111827;
+  color: var(--vp-c-text-1);
 }
 
 .card-desc {
   font-size: 0.9em;
-  color: #6b7280;
+  color: var(--vp-c-text-2);
 }
 
-/* --- 周刊内容内部的卡片美化（就是你截图里的“行业洞察”那种卡片） --- */
+/* --- 周刊内容内部的卡片美化 --- */
 .custom-block.info {
-  background-color: #fffdf0 !important; 
-  border: 1px solid #fce6a4 !important; 
+  background-color: var(--vp-c-bg) !important;
+  border: 1px solid var(--vp-c-divider) !important;
   border-radius: 12px !important;
   padding: 24px !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   transition: all 0.3s ease;
-  margin-bottom: 24px !important; /* 让卡片之间有距离 */
+  margin-bottom: 24px !important;
 }
 
-/* 卡片鼠标悬停浮起 */
 .custom-block.info:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(252, 211, 77, 0.2);
   border-color: #fcd34d !important;
+}
+
+/* --- 暗色模式适配 --- */
+.dark .weekly-card {
+  background-color: var(--vp-c-bg-alt);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dark .card-badge {
+  background-color: #422006;
+  color: #fcd34d;
+}
+
+.dark .custom-block.info {
+  background-color: var(--vp-c-bg-alt) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }

@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: .vitepress/cache
+          key: vitepress-cache-${{ hashFiles('package-lock.json') }}
+          restore-keys: vitepress-cache-
       - run: npm ci
       - run: npm run docs:build
       - uses: actions/configure-pages@v4
