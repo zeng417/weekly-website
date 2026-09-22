@@ -100,8 +100,7 @@ export default defineConfig({
   ],
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
-      { text: '往期周刊', link: weeklyList[0]?.link || '/' }
+      { text: '首页', link: '/' }
     ],
     sidebar: buildSidebar(),
     weeklyList: weeklyList.map((item, i) => ({
