@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/weekly-website/',
   title: "具身智能周刊",
   description: "每周精选行业动态",
   themeConfig: {
