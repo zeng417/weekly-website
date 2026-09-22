@@ -1,5 +1,5 @@
 <script setup>
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
 const { theme } = useData()
 const list = theme.value.weeklyList || []
@@ -7,7 +7,7 @@ const list = theme.value.weeklyList || []
 
 <template>
   <div class="weekly-grid">
-    <a v-for="item in list" :key="item.link" :href="item.link" class="weekly-card">
+    <a v-for="item in list" :key="item.link" :href="withBase(item.link)" class="weekly-card">
       <div class="card-header">
         <span v-if="item.isLatest" class="card-badge">最新</span>
         <span class="card-date">{{ item.date }}</span>
